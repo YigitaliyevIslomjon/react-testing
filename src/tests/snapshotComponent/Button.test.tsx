@@ -4,5 +4,5 @@ import '@testing-library/jest-dom';
 
 test('Button component renders correctly', () => {
     const { container } = render(<Button label="Click me" />);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(container).toMatchSnapshot();
   });
